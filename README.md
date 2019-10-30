@@ -1,1 +1,1 @@
-# Algorithms and Datastructers for Interview Preparation
+# Algorithms and Datastructures for Interview Preparation
