@@ -19,7 +19,7 @@ int countWays(int steps, int height, int startPos)
     else if (height == 1) {
         return 1;
     }
-    height = min(height,steps); // We should be atleast start at steps-1 th Index to reach 0th Index 
+    height = min(height,steps); // We should atleast start at steps-1 th Index to reach 0th Index 
     vector<vector<int> > dp(height, vector<int>(steps + 1, 0));
     dp[0][1] = 1;
     dp[1][1] = 1;
