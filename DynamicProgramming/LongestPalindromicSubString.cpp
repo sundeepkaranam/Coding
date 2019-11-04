@@ -4,9 +4,13 @@ https://leetcode.com/problems/longest-palindromic-substring/
 
 class Solution {
 public:
-    string longestPalindrome(string s) {
+    string longestPalindrome(string s) {  
     int n = s.size();  
-    vector<vector<bool>> dp(n,vector<bool> (n,false)); 
+    if(n <= 1){
+        return s;
+    }
+    // vector<vector<bool>> dp(n,vector<bool> (n,false)); 
+    bool dp[n][n] = {false};
     int maxLength = 1; 
     int start = 0;    
     for (int len = 1; len <= n; ++len) 
